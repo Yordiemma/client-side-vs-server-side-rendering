@@ -1,0 +1,57 @@
+
+:root {
+    /* Backgrounds */
+    --color-bg: #edf2f8;
+    --color-header-bg: #f3e8ff;
+    --color-surface: #ffffff;
+
+    /* Text */
+    --color-text-main: #1f2933;
+    --color-text-muted: #4b5563;
+
+    /* Brand*/
+    --color-primary: #7c3aed;
+    --color-primary-hover: #6d28d9;
+    --color-secondary: #f97316;
+    --color-secondary-hover: #ea580c;
+    --color-accent-blue: #2563eb;
+
+    /* UI */
+    --color-border: #d1d9e6;
+    --radius: 16px;
+
+    /* Font */
+    --font-base: "Barlow Semi Condensed", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,200;0,400;0,500;0,600;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap');
+*, *::after , *::befor {
+box-sizing: border-box;
+margin:0;
+padding: 0;
+}
+
+html{
+    font-size: 13px;
+}
+
+.logo-svg{
+    width: 150px;
+    height: auto;
+
+}
+body {
+    font-family:  var(--font-base) , sans-serif;
+    background-color: var(--color-bg);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.page-header{
+background-color:var(--color-header-bg) ;
+color: var(--color-text-main);
+min-height: 70px;
+padding-left:  40px;
+padding-right: 40px;
+display: flex;
+}
