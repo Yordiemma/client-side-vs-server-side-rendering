@@ -2,19 +2,205 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Children Toy Store</title>
-    <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>WonderToys — Where Play Comes Alive! 🧸</title>
+    <meta
+      name="description"
+      content="WonderToys sells safe, fun, and educational toys for children of all ages. Loved by parents, adored by kids."
+    />
+    <meta
+      name="keywords"
+      content="children toys, educational toys, safe toys for kids, fun toys"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "WonderToys",
+        "description": "Safe, fun and educational toys for children",
+        "url": "https://wondertoys.example.com"
+      }
+    </script>
   </head>
+
   <body>
-    <header class="page-header">
-      <div class="log">
-        <img class="logo-svg" src="/img/ Image1.png" alt="" />
-        <h1 class="title">Toy Store</h1>
+    <!-- ===================== SKIP LINK (accessibility) ===================== -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="page-header" role="banner">
+      <div class="logo" aria-label="WonderToys home">
+        <span class="logo-icon" aria-hidden="true">🧸</span>
+        <span class="logo-text">WonderToys</span>
       </div>
-      <nav>
+
+      <button
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        aria-label="Open navigation menu"
+      >
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="main-nav" aria-label="Main navigation">
         <a href="#home">Home</a>
-        <a href="testimpnials">Testimonials</a>
+
+        <a href="#testimonials">Reviews</a>
       </nav>
     </header>
+
+    <!-- ===================== MAIN ===================== -->
+    <main id="main-content">
+      <!-- HERO -->
+      <section id="home" class="hero" aria-labelledby="hero-heading">
+        <div class="hero-content">
+          <div class="badge" aria-label="New arrivals badge">
+            ✨ New arrivals just landed!
+          </div>
+          <h1 id="hero-heading" class="hero-title">
+            Toys that make<br />
+            <span class="accent">kids go WOW!</span>
+          </h1>
+          <p class="hero-desc">
+            Safe, colourful, and packed with fun our toys spark imagination and
+            keep little ones smiling all day long.
+          </p>
+          <div class="hero-actions">
+            <a href="#testimonials" class="btn btn-outline">See Reviews ⭐</a>
+          </div>
+          <p class="hero-note">
+            🔒 All toys meet EU & UK safety standards &nbsp;|&nbsp; 🚚 Free
+            delivery over £30
+          </p>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="blob"></div>
+          <div class="floating-emojis">
+            <span style="--d: 0s; --x: 10%; --y: 15%">🎠</span>
+            <span style="--d: 0.4s; --x: 75%; --y: 10%">🚀</span>
+            <span style="--d: 0.8s; --x: 20%; --y: 70%">🦕</span>
+            <span style="--d: 1.2s; --x: 65%; --y: 65%">🎨</span>
+            <span style="--d: 0.6s; --x: 45%; --y: 40%">⭐</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" aria-labelledby="testimonials-heading">
+        <div class="section-inner">
+          <h2 id="testimonials-heading" class="section-title">
+            Parents Love Us ❤️
+          </h2>
+          <p class="section-sub">Real reviews from real families</p>
+
+          <ul class="testimonials-grid" role="list">
+            <li class="card card--purple">
+              <div class="card-header">
+                <div class="avatar" aria-hidden="true">👩</div>
+                <div>
+                  <h3 class="card-name">Sarah M.</h3>
+                  <p class="card-role">Mum of two, London</p>
+                </div>
+                <div class="stars" aria-label="5 out of 5 stars" role="img">
+                  ★★★★★
+                </div>
+              </div>
+              <p class="card-lead">My kids haven't put it down!</p>
+              <p class="card-quote">
+                "The Dino Dig Kit was a huge hit. My 5-year-old learned so much
+                and had a blast."
+              </p>
+            </li>
+
+            <li class="card card--orange">
+              <div class="card-header">
+                <div class="avatar" aria-hidden="true">👨</div>
+                <div>
+                  <h3 class="card-name">Marcus T.</h3>
+                  <p class="card-role">Dad, Manchester</p>
+                </div>
+                <div class="stars" aria-label="5 out of 5 stars" role="img">
+                  ★★★★★
+                </div>
+              </div>
+              <p class="card-lead">Fast delivery, brilliant quality.</p>
+              <p class="card-quote">
+                "Ordered Thursday, arrived Friday. Packaging was adorable and
+                the toy is solid."
+              </p>
+            </li>
+
+            <li class="card card--green">
+              <div class="card-header">
+                <div class="avatar" aria-hidden="true">👩‍🦱</div>
+                <div>
+                  <h3 class="card-name">Priya K.</h3>
+                  <p class="card-role">Mum, Bristol</p>
+                </div>
+                <div class="stars" aria-label="5 out of 5 stars" role="img">
+                  ★★★★★
+                </div>
+              </div>
+              <p class="card-lead">Safe materials I can trust.</p>
+              <p class="card-quote">
+                "As a parent I worry about safety. WonderToys uses only
+                certified non-toxic materials."
+              </p>
+            </li>
+
+            <li class="card card--lilac">
+              <div class="card-header">
+                <div class="avatar" aria-hidden="true">👴</div>
+                <div>
+                  <h3 class="card-name">Jim & Carol</h3>
+                  <p class="card-role">Grandparents, Edinburgh</p>
+                </div>
+                <div class="stars" aria-label="5 out of 5 stars" role="img">
+                  ★★★★★
+                </div>
+              </div>
+              <p class="card-lead">Perfect gift, every time.</p>
+              <p class="card-quote">
+                "We've ordered four times now. Our grandchildren light up when a
+                WonderToys parcel arrives!"
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer" role="contentinfo">
+      <p class="footer-logo">🧸 WonderToys</p>
+      <p>© 2026 WonderToys Ltd. All rights reserved.</p>
+      <p class="footer-note">
+        This page uses <strong>Server-Side Rendering (SSR)</strong> — all
+        content is present in the HTML on load.
+      </p>
+    </footer>
+
+    <script>
+      // mobile nav toggle
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.getElementById("main-nav");
+      if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+          const open = nav.classList.toggle("nav-open");
+          toggle.setAttribute("aria-expanded", open);
+        });
+      }
+    </script>
   </body>
 </html>
